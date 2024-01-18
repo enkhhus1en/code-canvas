@@ -8,7 +8,8 @@ module.exports = {
       colors: {
         primary: '#f3ede5',
         nav: '#6c6c6c',
-        darkGreen: '#133416'
+        darkGreen: '#133416',
+        heroYellow: '#f7b300'
       }
     },
   },

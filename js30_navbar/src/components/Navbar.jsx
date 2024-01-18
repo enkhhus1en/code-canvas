@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { logo, menu, close } from "../assets";
 import { navLinks } from "../constants";
+import { styles } from "../styles";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -9,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="w-full py-6 flex justify-between items-between">
       <img src={logo} alt="ondeck" />
-      <ul className="hidden sm:flex items-center justify-center flex-1 list-none">
+      <ul className="hidden md:flex items-center justify-center flex-1 list-none">
         {navLinks.map((link, index) => (
           <li
             key={link.id}
@@ -38,13 +39,13 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <div className="hidden sm:flex justify-end items-center gap-1 text-nav">
+      <div className="hidden md:flex justify-end items-center gap-1 text-nav">
         <button className="text-nav px-5">Sign In</button>
-        <button className="text-white font-bold bg-darkGreen px-5 py-3 rounded">
+        <button className={styles.buttonGreen}>
           Try for free
         </button>
       </div>
-      <button className="sm:hidden" onClick={() => setToggle(true)}>
+      <button className="md:hidden" onClick={() => setToggle(true)}>
         <img src={menu} alt="menu" />
       </button>
       <div
@@ -87,7 +88,7 @@ const Navbar = () => {
             <button className="uppercase">Sign In</button>
           </li>
           <li>
-            <button className="text-white font-bold bg-darkGreen px-5 py-3 rounded">
+            <button className={styles.buttonGreen}>
               Try for free
             </button>
           </li>

@@ -1,6 +1,7 @@
 import './index.css';
 import { styles } from './styles';
 import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 
 function App() {
   return (
@@ -10,9 +11,9 @@ function App() {
           <Navbar />
         </div>
       </div>
-      <div className={`${styles.flexStart}`}>
+      <div className={`${styles.flexStart} ${styles.paddingX}`}>
         <div className={`${styles.boxWidth}`}>
-          {/* Hero */}
+          <Hero />
         </div>
       </div>
       <div className={`${styles.paddingX} ${styles.flexStart}`}>
