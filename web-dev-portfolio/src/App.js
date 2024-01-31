@@ -2,6 +2,7 @@ import { styles } from "./styles";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Clients from "./components/Clients";
+import Projects from "./components/Projects";
 
 function App() {
   // 1. Navbar
@@ -27,6 +28,11 @@ function App() {
       <div className={`${styles.flexCenter} ${styles.paddingX}`}>
         <div className={`${styles.boxWidth}`}>
           <Clients />
+        </div>
+      </div>
+      <div className={`${styles.flexCenter} ${styles.paddingX}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Projects />
         </div>
       </div>
     </div>

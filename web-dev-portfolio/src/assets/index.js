@@ -10,6 +10,7 @@ import twitter from './sns/Twitter.svg'
 import hamburger from './hamburger.svg'
 import spense from './Spense.png'
 import yelpcamp from './YelpCamp.png'
+import arrow from './arrow.png'
 
 export {
     jpmorgan,
@@ -23,5 +24,6 @@ export {
     twitter,
     hamburger,
     spense,
-    yelpcamp
+    yelpcamp,
+    arrow
 }
