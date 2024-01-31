@@ -5,11 +5,11 @@ import GetInTouch from "./GetInTouch";
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
-    
+
   return (
     <div className="w-full flex justify-between items-center gap-2 py-6">
       <h1 className="text-white font-heading">Johnatan Specter</h1>
-      <ul className="hidden md:flex justify-center gap-5 items-center flex-1 list-none text-nav">
+      <ul className="hidden lg:flex justify-center gap-5 items-center flex-1 list-none text-nav">
         {navLinks.map((link, index) => (
           <li
             key={link.id}
@@ -21,10 +21,10 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <GetInTouch />
       </div>
-      <button className="md:hidden" onClick={() => setToggle(true)}>
+      <button className="lg:hidden" onClick={() => setToggle(true)}>
         <img src={hamburger} alt="menu" />
       </button>
     </div>
