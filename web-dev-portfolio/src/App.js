@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Clients from "./components/Clients";
 import Projects from "./components/Projects";
+import Summary from "./components/Summary";
 
 function App() {
   // 1. Navbar
@@ -33,6 +34,11 @@ function App() {
       <div className={`${styles.flexCenter} ${styles.paddingX}`}>
         <div className={`${styles.boxWidth}`}>
           <Projects />
+        </div>
+      </div>
+      <div className={`${styles.flexCenter} ${styles.paddingX} bg-customgray`}>
+        <div className={`${styles.boxWidth}`}>
+          <Summary />
         </div>
       </div>
     </div>
