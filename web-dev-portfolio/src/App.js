@@ -5,6 +5,7 @@ import Clients from "./components/Clients";
 import Projects from "./components/Projects";
 import Summary from "./components/Summary";
 import ContactMe from './components/ContactMe';
+import Footer from "./components/Footer";
 
 function App() {
   // 1. Navbar
@@ -45,6 +46,11 @@ function App() {
       <div className={`${styles.flexStart} ${styles.paddingX}`}>
         <div className={`${styles.boxWidth}`}>
           <ContactMe />
+        </div>
+      </div>
+      <div className={`${styles.flexCenter} ${styles.paddingX} bg-customgray`}>
+        <div className={`${styles.boxWidth}`}>
+          <Footer />
         </div>
       </div>
     </div>

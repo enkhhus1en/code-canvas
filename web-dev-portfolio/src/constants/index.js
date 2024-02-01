@@ -1,4 +1,4 @@
-import { spense, yelpcamp } from "../assets"
+import { spense, yelpcamp, twitter, linkedin, github } from "../assets"
 
 export const navLinks = [
     {
@@ -31,5 +31,23 @@ export const projects = [
         title: 'YelpCamp.com',
         image: yelpcamp,
         description: "Allowing backpack travelers to perfectly plan their trip through and open-source platform similar to TripAdvisor. With over 1m MAU, YelpCamp has been the crowd's favorite in 2021"
+    }
+]
+
+export const socials = [
+    {
+        id: 'twitter',
+        link: 'twitter.com',
+        logo: twitter
+    },
+    {
+        id: 'linkedin',
+        link: 'linkedin.com',
+        logo: linkedin
+    },
+    {
+        id: 'github',
+        link: 'github.com',
+        logo: github
     }
 ]
